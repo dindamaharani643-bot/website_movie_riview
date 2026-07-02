@@ -1,0 +1,281 @@
+/* ==========================================================================
+   CSS PROFIL MODULAR - MIDNIGHT MAROON DEKOPAL (ANTI BENTROK)
+   ========================================================================== */
+
+.mv-profile-scope {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 40px 0;
+}
+
+.mv-profile-scope *, 
+.mv-profile-scope *::before, 
+.mv-profile-scope *::after {
+    box-sizing: border-box;
+}
+
+.mv-profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Tata Letak Dua Kolom Seimbang */
+.mv-profile-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.mv-profile-col-left {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 15px;
+    display: flex;
+}
+
+.mv-profile-col-right {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+    padding: 0 15px;
+    display: flex;
+}
+
+/* Komponen Kartu Midnight Maroon */
+.mv-profile-scope .mv-profile-card {
+    background-color: #141414 !important;
+    border: 1px solid #262626 !important;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mv-profile-scope .mv-profile-card:hover {
+    border-color: #7a0010 !important;
+    box-shadow: 0 0 25px rgba(122, 0, 16, 0.35);
+}
+
+/* Avatar Lingkar Merah */
+.mv-avatar-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mv-profile-avatar {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 3.5px solid #7a0010;
+    border-radius: 50%;
+    background-color: #0d0d0d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.mv-profile-name {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #ffffff;
+}
+
+.mv-profile-username {
+    font-size: 0.9rem;
+    color: #9e9e9e;
+    margin: 0 0 15px 0;
+}
+
+/* Badges */
+.mv-badge-wrapper {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.mv-badge-role {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 0.72rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 30px;
+    letter-spacing: 0.5px;
+}
+
+.mv-badge-admin {
+    background-color: #7a0010;
+    color: #ffffff;
+}
+
+.mv-badge-user {
+    background-color: #2b2b2b;
+    color: #cccccc;
+}
+
+/* Box Ringkasan Bio */
+.mv-bio-box {
+    background-color: #0b0b0b;
+    border-left: 3px solid #7a0010;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: left;
+    margin-top: auto;
+}
+
+.mv-bio-label {
+    display: block;
+    font-size: 0.65rem;
+    color: #9e9e9e;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.mv-bio-text {
+    font-size: 0.85rem;
+    color: #cccccc;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Form Input & Struktur Grid Dalam */
+.mv-profile-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 25px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #222;
+    color: #ffffff;
+}
+
+.mv-profile-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mv-form-row {
+    display: flex;
+    margin: 0 -10px;
+}
+
+.mv-form-group {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 10px;
+    margin-bottom: 18px;
+}
+
+.mv-form-group-full {
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.mv-form-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #9e9e9e;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Elemen Kontrol Input */
+.mv-profile-input {
+    width: 100%;
+    background-color: #0a0a0a !important;
+    border: 1px solid #2a2a2a !important;
+    color: #ffffff !important;
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.mv-profile-input:focus {
+    border-color: #7a0010 !important;
+    box-shadow: 0 0 8px rgba(122, 0, 16, 0.4);
+}
+
+.mv-profile-input-disabled {
+    width: 100%;
+    background-color: #111111 !important;
+    border: 1px solid #1f1f1f !important;
+    color: #555555 !important;
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.9rem;
+    cursor: not-allowed;
+}
+
+/* Sembunyikan/Tampilkan Sandi */
+.mv-password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.mv-password-eye {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+}
+
+.mv-password-eye:hover {
+    color: #7a0010;
+}
+
+.mv-form-help {
+    font-size: 0.75rem;
+    color: #666666;
+    margin-top: 5px;
+}
+
+/* Tombol Kirim Form */
+.mv-form-actions {
+    margin-top: auto;
+    padding-top: 15px;
+    text-align: right;
+}
+
+.mv-btn-submit {
+    background-color: #7a0010;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 35px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.mv-btn-submit:hover {
+    background-color: #a00015;
+    box-shadow: 0 4px 15px rgba(122, 0, 16, 0.4);
+}
+
+/* Responsif untuk Smartphone */
+@media (max-width: 768px) {
+    .mv-profile-col-left, 
+    .mv-profile-col-right,
+    .mv-form-group {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .mv-form-row {
+        flex-direction: column;
+        margin: 0;
+    }
+    .mv-form-group {
+        padding: 0;
+    }
+}

@@ -1,0 +1,65 @@
+ /* --- Perbaikan Style Kriteria & Tombol (Midnight Theme) --- */
+
+ /* Menghilangkan border merah box agar teks langsung menyatu dengan form */
+ .password-requirements {
+     background-color: transparent !important;
+     border: none !important;
+     padding: 5px 0 0 0 !important;
+     margin-top: 5px;
+ }
+
+ /* Warna saat kriteria BELUM terpenuhi (Merah Terang Kontras) */
+ .text-invalid {
+     color: #ff6b6b !important;
+     font-size: 13px;
+     list-style: none;
+     margin-bottom: 5px;
+     transition: all 0.3s ease;
+     opacity: 0.9;
+ }
+
+ /* Warna saat kriteria SUDAH terpenuhi (Hijau Terang Glow) */
+ .text-valid {
+     color: #2ecc71 !important;
+     font-size: 13px;
+     font-weight: bold;
+     list-style: none;
+     margin-bottom: 5px;
+     transition: all 0.3s ease;
+ }
+
+ /* Menghilangkan margin bawaan list */
+ .password-requirements ul {
+     padding-left: 0;
+     margin-bottom: 0;
+ }
+
+ /* Style Tombol Daftar Saat Valid / Aktif (Sesuai style tombol Masuk) */
+ .btn-maroon-aktif {
+     background-color: #7a0010 !important;
+     /* Merah Maroon Tegas */
+     color: #ffffff !important;
+     border: 1px solid #7a0010 !important;
+     opacity: 1 !important;
+     cursor: pointer;
+     font-weight: bold;
+     transition: all 0.3s ease-in-out;
+ }
+
+ /* EFEK HOVER: Hanya berjalan saat tombol aktif (TIDAK disabled) */
+ .btn-maroon-aktif:not(:disabled):hover {
+     background-color: #670806;
+     transform: translateY(-2px);
+     box-shadow: 0 5px 15px rgba(245, 197, 24, 0.4);
+     color: #000;
+ }
+
+ /* Style Tombol Daftar Saat Disabled (Meredup Transparan & Tanpa Efek Hover) */
+ .btn-maroon-aktif:disabled {
+     background-color: #222222 !important;
+     color: #666666 !important;
+     border: 1px solid #333333 !important;
+     opacity: 0.4 !important;
+     cursor: not-allowed;
+     box-shadow: none !important;
+ }

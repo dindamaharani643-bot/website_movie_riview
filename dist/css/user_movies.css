@@ -1,0 +1,211 @@
+/* ==========================================================================
+   CSS INTEGRASI CATALOG FILTER & OVERLAY - THEMEZY STYLE KELOMPOK 5
+   ========================================================================== */
+
+/* Layout Baris Filter Atas */
+
+.filters-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #262626;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filters-row .section-title {
+    margin: 0;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* Form Dropdown Bergaya Gelap Gelap */
+.themezy-filter-form {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    border: 1px solid #2d2d2d;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.themezy-filter-form .filter-icon {
+    color: #7a0010;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.themezy-select {
+    background: transparent !important;
+    border: none !important;
+    color: #fff !important;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    padding-right: 20px;
+}
+
+.themezy-select option {
+    background-color: #141414;
+    color: #fff;
+}
+
+/* Efek Hover Poster Film Premium */
+.movie-poster {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #0f0f0f;
+}
+
+.movie-poster-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(122, 0, 16, 0.92); /* Background Maroon Transparan saat hover */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.movie-poster:hover .movie-poster-overlay {
+    opacity: 1;
+}
+
+/* Konten di Dalam Overlay Poster */
+.overlay-details {
+    width: 100%;
+    color: #fff;
+}
+
+.ol-rating {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffc107;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 5px;
+}
+
+.ol-info {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: #eaeaea;
+}
+
+.ol-info strong {
+    color: #fff;
+}
+
+.ol-badge-usia {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+/* Modifikasi text-truncate agar nama aktor panjang tidak tumpah */
+.text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Gaya Tampilan Jika Data Kosong */
+.themezy-empty-alert {
+    text-align: center;
+    padding: 50px 20px;
+    background: #141414;
+    border-radius: 6px;
+    border: 1px dashed #2d2d2d;
+    margin: 20px 0;
+}
+
+.themezy-empty-alert i {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.themezy-empty-alert h3 {
+    color: #fff;
+    margin: 0 0 5px 0;
+}
+
+.themezy-empty-alert p {
+    color: #666;
+    margin: 0;
+    font-size: 13px;
+}
+
+/* Sinkronisasi Tema dengan Halaman Profil */
+body {
+    background-color: #050505 !important; /* Hitam pekat senada dengan profil */
+    color: #e5e5e5;
+}
+
+.page {
+    background-color: #0a0a0a;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+/* Menyeragamkan Ukuran Poster */
+.movie-poster-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 300px; /* Tinggi seragam */
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #1f1f1f;
+    position: relative;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar memenuhi area tanpa terdistorsi */
+    transition: transform 0.3s ease;
+}
+
+/* Mengatur ukuran judul agar lebih proporsional */
+.movie-title {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.movie-title a {
+    font-size: 25px;      /* Sesuaikan ukuran ini (default biasanya 18px-24px) */
+    font-weight: 600;     /* Membuat tulisan tidak terlalu tebal */
+    line-height: 1.3;
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.movie-title a:hover {
+    color: #7a0010;       /* Warna marun sesuai tema */
+}
+
+.ol-rating {
+    color: #ffc107 !important; /* Warna emas rating */
+}

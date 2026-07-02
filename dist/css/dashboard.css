@@ -1,0 +1,253 @@
+/* ==========================================================================
+   CSS ADMIN DASHBOARD MODULAR - MIDNIGHT MAROON INTEGRATED (THEME PROFIL)
+   ========================================================================== */
+
+.mv-db-scope {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 30px 0;
+    background-color: #0d0d0d; /* Menjamin background tetap gelap sinematik */
+}
+
+.mv-db-scope *, 
+.mv-db-scope *::before, 
+.mv-db-scope *::after {
+    box-sizing: border-box;
+}
+
+.mv-db-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Typography Header */
+.mv-db-title-main {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.mv-db-subtitle {
+    font-size: 0.9rem;
+    color: #9e9e9e;
+    margin: 0;
+}
+
+/* Sistem Grid Fleksibel Sesuai Struktur Dua Kolom Profil */
+.mv-db-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+/* Grid Pembagian Kolom Ringkasan Atas (4 Box) */
+.mv-db-col-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 10px;
+}
+
+/* Grid Pembagian Kolom Tengah (Grafik) */
+.mv-db-col-large {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+    padding: 0 10px;
+}
+
+.mv-db-col-small {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 10px;
+}
+
+.mv-db-col-full {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+/* ==========================================================================
+   KOMPONEN ELEMEN UTAMA (KARTU & PANEL)
+   ========================================================================== */
+
+/* Komponen Stat Card Angka Ringkasan */
+.mv-stat-card {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-left: 4px solid #7a0010; /* Aksen Tebal Khas Kelompok 5 */
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mv-stat-card:hover {
+    transform: translateY(-4px);
+    border-color: #7a0010;
+    box-shadow: 0 0 20px rgba(122, 0, 16, 0.3);
+}
+
+.mv-stat-icon {
+    font-size: 2.2rem;
+    color: #7a0010;
+    margin-right: 18px;
+    opacity: 0.9;
+}
+
+.mv-stat-info h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+}
+
+.mv-stat-info p {
+    font-size: 0.78rem;
+    color: #888888;
+    margin: 5px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+/* Komponen Panel Dashboard Card */
+.mv-db-scope .mv-db-card {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 25px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mv-db-scope .mv-db-card:hover {
+    border-color: #7a0010;
+    box-shadow: 0 0 20px rgba(122, 0, 16, 0.2);
+}
+
+.mv-card-title-maroon {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #222;
+}
+
+.mv-card-title-maroon i {
+    color: #7a0010;
+    margin-right: 8px;
+}
+
+/* Pembungkus Grafik Kontainer */
+.mv-chart-container {
+    position: relative;
+    height: 260px;
+    width: 100%;
+}
+
+/* ==========================================================================
+   TABEL KUSTOM & TOMBOL AKSES
+   ========================================================================== */
+
+.mv-table-dashboard {
+    color: #ffffff !important;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.mv-table-dashboard tragedy, 
+.mv-table-dashboard thead th {
+    background-color: #0d0d0d !important;
+    color: #9e9e9e !important;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 2px solid #222222 !important;
+    padding: 14px 10px;
+    letter-spacing: 0.5px;
+}
+
+.mv-table-dashboard tbody td {
+    background-color: transparent !important;
+    border-bottom: 1px solid #1f1f1f !important;
+    padding: 15px 10px;
+    vertical-align: middle;
+    font-size: 0.88rem;
+}
+
+.text-silver {
+    color: #cccccc;
+}
+
+/* Tombol Aksi Moderasi Tabel */
+.btn-action {
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    border-radius: 5px;
+    margin-right: 4px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-action:hover {
+    opacity: 0.85;
+}
+
+/* Tombol Link "Lihat Semua" (Mengikuti Gaya Desain Tombol Kirim Form) */
+.mv-btn-view-all {
+    background-color: #7a0010;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.mv-btn-view-all:hover {
+    background-color: #a00015;
+    box-shadow: 0 4px 12px rgba(122, 0, 16, 0.4);
+}
+
+/* ==========================================================================
+   RESPONSIF SMARTPHONE DAN TABLET (ANTI PECAH LAYAR)
+   ========================================================================== */
+@media (max-width: 992px) {
+    .mv-db-col-large, 
+    .mv-db-col-small {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mv-db-col-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mv-db-col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .mv-db-row {
+        margin: 0;
+    }
+    .mv-db-col-4, .mv-db-col-large, .mv-db-col-small, .mv-db-col-full {
+        padding: 0;
+    }
+}
